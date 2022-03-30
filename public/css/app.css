@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #303030;
+}
+
+.ms_red {
+  color: #e30813;
+}
+
+.ms_bg-black {
+  background-color: #000;
+}
+
+.ms_btn-bg-red {
+  background-color: #e30813;
+  color: #fff;
+}
+
+main {
+  background-color: #303030;
+  height: calc(100vh - 68px);
+  overflow-y: auto;
+}
+
+main .ms_col-height {
+  height: 342px;
+}
+
+main .flip-box {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  perspective: 1000px;
+}
+
+main .flip-box .flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+main .flip-box .flip-box-inner .flip-box-front,
+main .flip-box .flip-box-inner .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+main .flip-box .flip-box-inner .flip-box-back {
+  background-color: #000;
+  color: #fff;
+  transform: rotateY(180deg);
+  overflow: auto;
+}
+
+main .flip-box .flip-box-inner .ms_flag {
+  width: 20px;
+}
+
+main .flip-box .flip-box-inner .poster-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+

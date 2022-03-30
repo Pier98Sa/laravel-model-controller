@@ -1,0 +1,17 @@
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: $primaryColor; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $quaternaryColor; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secondaryColor; 
+}
+
