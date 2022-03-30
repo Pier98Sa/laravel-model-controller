@@ -1,3 +1,4 @@
+/*Main*/
 main{
     background-color: $secondaryColor;
     height: calc(100vh - 68px);
@@ -7,6 +8,7 @@ main{
         height: 342px;
     }
 
+    /*Flip box source w3school*/
     .flip-box {
         background-color: transparent;
         height: 100%;
@@ -37,10 +39,6 @@ main{
                 overflow: auto;
             }
 
-            .ms_flag{
-                width: 20px;
-            }
-
             .poster-img{
                 width: 100%;
                 height: 100%;
@@ -50,7 +48,9 @@ main{
         }
     }
 
+    /*regole per far girare il flip-box*/
     .flip-box:hover .flip-box-inner {
         transform: rotateY(180deg);
     }
+
 }

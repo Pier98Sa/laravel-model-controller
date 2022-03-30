@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/*SCROLLBAR PERSONALIZZATA source W3School*/
+
 /* width */
 
 ::-webkit-scrollbar {
@@ -28,6 +30,8 @@
   background: #303030;
 }
 
+/*COLORAZIONI HEADER*/
+
 .ms_red {
   color: #e30813;
 }
@@ -41,10 +45,19 @@
   color: #fff;
 }
 
+header a:hover {
+  color: #e30813;
+  cursor: pointer;
+}
+
+/*Main*/
+
 main {
   background-color: #303030;
   height: calc(100vh - 68px);
   overflow-y: auto;
+  /*Flip box source w3school*/
+  /*regole per far girare il flip-box*/
 }
 
 main .ms_col-height {
@@ -80,10 +93,6 @@ main .flip-box .flip-box-inner .flip-box-back {
   color: #fff;
   transform: rotateY(180deg);
   overflow: auto;
-}
-
-main .flip-box .flip-box-inner .ms_flag {
-  width: 20px;
 }
 
 main .flip-box .flip-box-inner .poster-img {

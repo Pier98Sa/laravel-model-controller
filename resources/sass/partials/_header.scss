@@ -1,3 +1,4 @@
+/*COLORAZIONI HEADER*/ 
 .ms_red{
     color: $tertiaryColor;
 }
@@ -9,4 +10,11 @@
 .ms_btn-bg-red{
     background-color: $tertiaryColor;
     color: $quaternaryColor;
+}
+
+header{
+    a:hover{
+        color: $tertiaryColor;
+        cursor: pointer;
+    }
 }
